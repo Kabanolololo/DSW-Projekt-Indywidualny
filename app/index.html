@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>To-Do List</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div id="app">
+    <h1>To-Do List</h1>
+    <p class="instructions">Add tasks to your list and mark them as completed when done.</p>
+    <div class="todo-form">
+      <input type="text" id="todo-input" placeholder="Add a new task...">
+      <button id="add-btn">Add</button>
+    </div>
+    <div class="task-summary">
+      <p id="task-count">Total tasks: 0</p>
+      <p id="completed-count">Completed tasks: 0</p>
+    </div>
+    <div class="task-filter">
+      <label for="filter-select">Filter tasks:</label>
+      <select id="filter-select">
+        <option value="all">All</option>
+        <option value="completed">Completed</option>
+        <option value="uncompleted">Uncompleted</option>
+      </select>
+    </div>
+    <div class="controls">
+      <button id="mark-all-completed-btn">Mark All as Completed</button>
+      <button id="clear-completed-btn">Clear Completed</button>
+    </div>
+    <ul id="todo-list"></ul>
+    <div class="about">
+      <p>To-Do List App by <strong>Pawel Muszynski</strong></p>
+      <p>Student ID: <strong>48770</strong></p>
+    </div>
+  </div>
+  <script src="app.js"></script>
+  <script>
+    const secret = "${SECRET_VALUE}";
+    console.log("SECRET_VALUE:", secret);
+</script>
+</body>
+</html>
